@@ -1,4 +1,4 @@
-System.register(['angular2/core', './sidebar.component', './data.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,35 +10,29 @@ System.register(['angular2/core', './sidebar.component', './data.component'], fu
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, sidebar_component_1, data_component_1;
-    var AppComponent;
+    var core_1;
+    var SidebarComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (sidebar_component_1_1) {
-                sidebar_component_1 = sidebar_component_1_1;
-            },
-            function (data_component_1_1) {
-                data_component_1 = data_component_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            SidebarComponent = (function () {
+                function SidebarComponent() {
                 }
-                AppComponent = __decorate([
+                SidebarComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        templateUrl: 'app/ts/app.component.html',
-                        directives: [sidebar_component_1.SidebarComponent, data_component_1.DataComponent]
+                        selector: 'sidebar',
+                        //templateUrl: 'app/ts/sidebar.component.html'
+                        template: '<h1>sidebar123</h1>'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], SidebarComponent);
+                return SidebarComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("SidebarComponent", SidebarComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=sidebar.component.js.map

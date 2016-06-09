@@ -1,4 +1,4 @@
-System.register(['angular2/core', './sidebar.component', './data.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './data.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,35 +10,33 @@ System.register(['angular2/core', './sidebar.component', './data.component'], fu
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, sidebar_component_1, data_component_1;
-    var AppComponent;
+    var core_1, data_service_1;
+    var DataComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (sidebar_component_1_1) {
-                sidebar_component_1 = sidebar_component_1_1;
-            },
-            function (data_component_1_1) {
-                data_component_1 = data_component_1_1;
+            function (data_service_1_1) {
+                data_service_1 = data_service_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            DataComponent = (function () {
+                function DataComponent(dataService) {
+                    this.DataVar = dataService.getCourses();
                 }
-                AppComponent = __decorate([
+                DataComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        templateUrl: 'app/ts/app.component.html',
-                        directives: [sidebar_component_1.SidebarComponent, data_component_1.DataComponent]
+                        selector: 'datalist-component',
+                        templateUrl: 'app/ts/data.component.html',
+                        providers: [data_service_1.DataService]
                     }), 
-                    __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                    __metadata('design:paramtypes', [data_service_1.DataService])
+                ], DataComponent);
+                return DataComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("DataComponent", DataComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=data.component.js.map

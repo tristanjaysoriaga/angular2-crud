@@ -1,10 +1,13 @@
+
 import {Component} from 'angular2/core'
-import {CoursesComponent} from './courses.component'
+import {SidebarComponent} from './sidebar.component'
+import {DataComponent} from './data.component'
 
 @Component({
     selector: 'my-app',
     templateUrl: 'app/ts/app.component.html',
-    directives: [CoursesComponent]
+    directives: [SidebarComponent,DataComponent]
 })
 export class AppComponent { 
 }
+

@@ -1,0 +1,19 @@
+<h1>datalist</h1>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Country</th>
+      <th>City</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="#item of DataVar">
+      <td>{{ item.name }}</td>
+      <td>{{ item.country }}</td>
+      <td>{{ item.city }}</td>
+      <td>{{ item.email }}</td>
+    </tr>
+  </tbody>
+</table>
