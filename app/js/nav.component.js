@@ -11,27 +11,27 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var SidebarComponent;
+    var NavComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            SidebarComponent = (function () {
-                function SidebarComponent() {
+            NavComponent = (function () {
+                function NavComponent() {
                 }
-                SidebarComponent = __decorate([
+                NavComponent = __decorate([
                     core_1.Component({
-                        selector: 'sidebar-component',
-                        templateUrl: 'app/ts/sidebar.component.html'
+                        selector: 'nav-component',
+                        templateUrl: 'app/ts/nav.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], SidebarComponent);
-                return SidebarComponent;
+                ], NavComponent);
+                return NavComponent;
             }());
-            exports_1("SidebarComponent", SidebarComponent);
+            exports_1("NavComponent", NavComponent);
         }
     }
 });
-//# sourceMappingURL=sidebar.component.js.map
+//# sourceMappingURL=nav.component.js.map

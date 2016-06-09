@@ -1,4 +1,4 @@
-System.register(['angular2/core', './sidebar.component', './data.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './sidebar.component', './data.component', './nav.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './sidebar.component', './data.component'], fu
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, sidebar_component_1, data_component_1;
+    var core_1, sidebar_component_1, data_component_1, nav_component_1;
     var AppComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', './sidebar.component', './data.component'], fu
             },
             function (data_component_1_1) {
                 data_component_1 = data_component_1_1;
+            },
+            function (nav_component_1_1) {
+                nav_component_1 = nav_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -31,7 +34,7 @@ System.register(['angular2/core', './sidebar.component', './data.component'], fu
                     core_1.Component({
                         selector: 'my-app',
                         templateUrl: 'app/ts/app.component.html',
-                        directives: [sidebar_component_1.SidebarComponent, data_component_1.DataComponent]
+                        directives: [sidebar_component_1.SidebarComponent, data_component_1.DataComponent, nav_component_1.NavComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
